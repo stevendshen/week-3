@@ -20,12 +20,12 @@
 
 
   // clean the data
-  for (var i = 0; i < schools.length - 1; i++) {
+  for (var i = 0; i < schools.length; i++) {
     // If we have '19104 - 1234', splitting and taking the first (0th) element
     // as an integer should yield a zip in the format above
     if (typeof schools[i].ZIPCODE === 'string') {
-      var split = schools[i].ZIPCODE.split(' ');
-      var normalized_zip = parseInt(split[0]);
+      var split = schools[i].ZIPCODE.split(' '); // split creates an array of the diferent parts of the string
+      var normalized_zip = parseInt(split[0]); // parseInt treats the string as a number
       schools[i].ZIPCODE = normalized_zip;
     }
 

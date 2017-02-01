@@ -1,3 +1,5 @@
+// Optional. There is an error in this file, figure it out.
+
 (function(){
 
   var map = L.map('map', {

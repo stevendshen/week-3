@@ -17,4 +17,25 @@ var myArray = [1, 10, 100, 1000];
 _.each(myArray, function(value, key, list) {
   console.log(value, key, list);
 });
+
+
 ===================== */
+
+
+// Count the number of times a value occurs in an array
+
+var myarray = [1, 2, 3, 4, 5, 4, 4, 4, 4, 4, 11, 12, 13, 15];
+
+var count_times = function(some_array, i){
+  var count = 0;
+  _.each(some_array, function(x){if(x == i){count += 1 ;}});
+  console.log(count);
+};
+
+count_times(myarray,4);
+
+
+// Return the first element of each array
+
+var myarray = [[1, 2, 3], [4, 5, 4]];
+_.each(myarray, function(anyarray){console.log(anyarray[0]);});
